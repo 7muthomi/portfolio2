@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felista's Portfolio</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="about-section">
+            <h1>About</h1>
+            <p>I am a web developer and this is my portfolio.</p>
+            <video controls>
+                <source src="my-introduction.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section id="work" class="work-section">
+            <h2>Work</h2>
+            <h3>Below are examples of projects I've worked on over the years.</h3>
+            <ul>
+                <li><a href="project1.html">P1</a></li>
+                <li><a href="project2.html">P2</a></li>
+                <li><a href="project3.html">P3</a></li>
+            </ul>
+        </section>
+
+        <section id="resume" class="resume-section">
+            <h2>Resume</h2>
+            <table>
+                <tr>
+                    <th>Experience</th>
+                    <th>Years</th>
+                </tr>
+                <tr>
+                    <td>Web Developer at Saf & Group</td>
+                    <td>2021 - Present</td>
+                </tr>
+                <tr>
+                    <td>Junior Developer at Oracle</td>
+                    <td>2016 - 2019</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Me</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
